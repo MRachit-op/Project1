@@ -27,5 +27,5 @@
     padding: 5px;
 }
 .mainbg{
-    background: rgb(0, 0, 0);
-    background: -webkit-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 50) 100%) no-repeat;
+    background: rgb(255, 255, 255);
+    background: -webkit-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(0, 100, 255) 100%) no-repeat;
