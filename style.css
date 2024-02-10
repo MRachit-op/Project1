@@ -28,4 +28,4 @@
 }
 .mainbg{
     background: rgb(0, 0, 0);
-    background: -webkit-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 50) 100%) repeat-x;
+    background: -webkit-linear-gradient(bottom, rgb(0, 0, 0) 0%, rgb(0, 0, 50) 100%) no-repeat;
