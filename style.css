@@ -26,12 +26,16 @@
     margin: 5px;
     padding: 5px;
 }
-.mainbg{
-    background: rgb(255, 255, 255);
-    background: -webkit-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(0, 100, 255) 100%);
-    background-repeat: no-repeat;
-}
 @keyframes bganimation{
     0%{background: -webkit-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(0, 100, 255) 100%);}
     50%{background: -webkit-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(255, 30, 0) 100%);}
     100%{background: -webkit-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(0, 100, 255) 100%);}
+}
+.mainbg{
+    background: rgb(255, 255, 255);
+    background: -webkit-linear-gradient(bottom, rgb(255, 255, 255) 0%, rgb(0, 100, 255) 100%);
+    background-repeat: no-repeat;
+    animation-name: bganimation;
+    animation-duration: 10s;
+}
+
