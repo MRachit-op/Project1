@@ -3,7 +3,7 @@
     margin-top: 2px;
     margin-bottom: 2px;
     padding: 3px;
-    outline: 5px;
+    outline: 0px;
 }
 .head1{
     background-color: rgb(50, 115, 255);
@@ -42,5 +42,5 @@
 }
 body, html{
     height: 100%;
-    margin: 10px;
+    margin: 0px;
 }
