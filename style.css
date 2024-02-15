@@ -38,7 +38,7 @@
     background: -o-linear-gradient(Top, rgb(0, 0, 0) 0%, rgb(255, 255, 255) 100%);
     background: -moz-linear-gradient(Top, rgb(255, 0, 0) 0%, rgb(255, 255, 255) 100%);
     background: -webkit-linear-gradient(Top, blue 0%, white 0%);
-    background: linear-gradient(blue, white, blue);
+    background: linear-gradient(blue, white 100px, blue);
     background-repeat: no-repeat;
 }
 body, html{
