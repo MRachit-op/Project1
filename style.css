@@ -1,3 +1,11 @@
+.mainTitle{
+ 	font-family: "Great Vibes", cursive;
+ 	font-weight: 400;
+ 	font-style: normal;
+	color: white;
+    text-align: center;
+    font-size: 400;
+}
 .content{
     background-color: rgb(0, 250, 142);
     margin: 5px;
