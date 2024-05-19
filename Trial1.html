@@ -10,37 +10,61 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f0f0f0;
+            background-color: #e9f5ff; /* Light blue background */
+            color: #333; /* Darker text for contrast */
         }
         header {
             background-color: #007bff; /* Blue */
             color: #fff; /* White */
-            padding: 10px;
+            padding: 20px 0;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav {
-            background-color: #007bff; /* Blue */
+            background-color: #0056b3; /* Darker blue */
             color: #fff; /* White */
-            padding: 10px;
+            padding: 15px;
             text-align: center;
         }
         nav a {
             color: #fff; /* White */
             text-decoration: none;
-            margin: 0 10px;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
         }
         section {
-            padding: 20px;
+            padding: 40px;
             text-align: center;
+            background-color: #fff; /* White background for contrast */
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
         }
         footer {
             background-color: #007bff; /* Blue */
             color: #fff; /* White */
-            padding: 10px;
+            padding: 20px;
             text-align: center;
             position: fixed;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .btn {
+            background-color: #007bff; /* Blue */
+            color: #fff; /* White */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #0056b3; /* Darker blue */
         }
     </style>
 </head>
@@ -59,7 +83,14 @@
 
 <section>
     <h2>About Me</h2>
-    <p>This is a brief description of who I am and what I do.</p>
+    <p>This is a brief description of who I am and what I do. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a href="#" class="btn">Learn More</a>
+</section>
+
+<section>
+    <h2>Services</h2>
+    <p>Here is an overview of the services I offer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <a href="#" class="btn">View Services</a>
 </section>
 
 <footer>
@@ -68,3 +99,4 @@
 
 </body>
 </html>
+
