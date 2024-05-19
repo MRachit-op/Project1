@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax Homepage</title>
+    <title>Parallax with Changing Images</title>
     <style>
         /* Basic reset and styling */
         body, html {
@@ -19,8 +19,7 @@
         }
 
         .parallax {
-            background-image: url('https://via.placeholder.com/1920x1080/007bff/ffffff'); /* Replace with your own image */
-            min-height: 500px;
+            height: 500px;
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
@@ -85,7 +84,7 @@
     <a href="#">Contact</a>
 </nav>
 
-<div class="parallax"></div>
+<div class="parallax" id="parallax1"></div>
 
 <section class="content">
     <h2>About Me</h2>
@@ -93,7 +92,7 @@
     <a href="#" class="btn">Learn More</a>
 </section>
 
-<div class="parallax"></div>
+<div class="parallax" id="parallax2"></div>
 
 <section class="content">
     <h2>Services</h2>
@@ -101,9 +100,27 @@
     <a href="#" class="btn">View Services</a>
 </section>
 
+<div class="parallax" id="parallax3"></div>
+
 <footer>
     <p>&copy; 2024 My Homepage. All rights reserved.</p>
 </footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Array of background images
+        const images = [
+            'https://via.placeholder.com/1920x1080/007bff/ffffff',
+            'https://via.placeholder.com/1920x1080/0056b3/ffffff',
+            'https://via.placeholder.com/1920x1080/003366/ffffff'
+        ];
+
+        // Assign images to parallax sections
+        document.getElementById('parallax1').style.backgroundImage = `url(${images[0]})`;
+        document.getElementById('parallax2').style.backgroundImage = `url(${images[1]})`;
+        document.getElementById('parallax3').style.backgroundImage = `url(${images[2]})`;
+    });
+</script>
 
 </body>
 </html>
