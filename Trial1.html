@@ -3,75 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Homepage</title>
+    <title>Parallax Homepage</title>
     <style>
-        /* CSS styles for blue and white theme */
-        body {
-            font-family: Arial, sans-serif;
+        /* Basic reset and styling */
+        body, html {
             margin: 0;
             padding: 0;
-            background-color: #e9f5ff; /* Light blue background */
-            color: #333; /* Darker text for contrast */
+            font-family: Arial, sans-serif;
+            color: #333;
         }
-        header {
-            background-color: #007bff; /* Blue */
-            color: #fff; /* White */
-            padding: 20px 0;
+
+        header, section, footer {
+            padding: 20px;
             text-align: center;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
+        .parallax {
+            background-image: url('https://via.placeholder.com/1920x1080/007bff/ffffff'); /* Replace with your own image */
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .content {
+            padding: 20px;
+            background-color: #fff;
+        }
+
         nav {
             background-color: #0056b3; /* Darker blue */
             color: #fff; /* White */
             padding: 15px;
             text-align: center;
         }
+
         nav a {
-            color: #fff; /* White */
+            color: #fff;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
         }
+
         nav a:hover {
             text-decoration: underline;
         }
-        section {
-            padding: 40px;
-            text-align: center;
-            background-color: #fff; /* White background for contrast */
-            margin: 20px auto;
-            width: 80%;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-        footer {
-            background-color: #007bff; /* Blue */
-            color: #fff; /* White */
-            padding: 20px;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-        }
+
         .btn {
             background-color: #007bff; /* Blue */
-            color: #fff; /* White */
+            color: #fff;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
             margin-top: 20px;
         }
+
         .btn:hover {
             background-color: #0056b3; /* Darker blue */
+        }
+
+        footer {
+            background-color: #007bff; /* Blue */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Homepage</h1>
+    <h1>Welcome to My Parallax Homepage</h1>
 </header>
 
 <nav>
@@ -81,13 +85,17 @@
     <a href="#">Contact</a>
 </nav>
 
-<section>
+<div class="parallax"></div>
+
+<section class="content">
     <h2>About Me</h2>
     <p>This is a brief description of who I am and what I do. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <a href="#" class="btn">Learn More</a>
 </section>
 
-<section>
+<div class="parallax"></div>
+
+<section class="content">
     <h2>Services</h2>
     <p>Here is an overview of the services I offer. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
     <a href="#" class="btn">View Services</a>
@@ -99,4 +107,3 @@
 
 </body>
 </html>
-
